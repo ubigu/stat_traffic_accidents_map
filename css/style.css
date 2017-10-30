@@ -2328,9 +2328,7 @@
                 vertical-align: middle;
                 width: 96%;
                 z-index: 2;
-                left: 6px;
-                /*right: 10px;*/
-                
+                left: 6px;               
                 font-size: 1em;
             }
             .ol-popup {
