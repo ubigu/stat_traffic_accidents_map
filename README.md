@@ -21,4 +21,3 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 GNU GENERAL PUBLIC LICENSE: https://www.gnu.org/licenses/gpl.html
-# Copyright and license
