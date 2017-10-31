@@ -1090,11 +1090,11 @@
             color: #FFFFFF;
             font-weight: bold;
             background: url("../img/roadheader.png") no-repeat center;
-            background-attachment: fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
+            /*background-attachment: fixed;*/
+            -webkit-background-size: auto;
+            -moz-background-size: auto;
+            background-size: auto;
+            -o-background-size: auto;
             /*border-radius: 3px 3px 0px 0px;*/
         }
         #welcomeInnerContent {
