@@ -3,6 +3,9 @@ Traffic accident statistics include a wealth of information about the severity o
 Via the map, you may visualize traffic accident data based on your own desired choice of variables.
 The service allows you to create routings between locations and calculate traffic accident occurrences along the routes.
 
+# Installation
+You do not have to install the program. It works directly when has been downloaded.
+Parameter file (parameters.js) contains the language settings and other parameters for the program.
 
 # Copyright and license
 Copyright (C) 2017 Ubigu Ltd

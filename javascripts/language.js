@@ -1,3 +1,7 @@
+ //WFS-service url for traffic accidents
+ var url = '';
+ //MapBox apikey
+ var api_key = '';
  var en = {
     lang_header_logo: "https://stat.webigu.fi/img/TK_EN_white_198.png",
     lang_welcome_header:"Welcome to the<br />traffic accidents map service",
