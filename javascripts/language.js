@@ -5,8 +5,8 @@
  var en = {
     lang_header_logo: "https://stat.webigu.fi/img/TK_EN_white_198.png",
     lang_welcome_header:"Welcome to the<br />traffic accidents map service",
-    lang_welcome_innercontent:"<p>Traffic accident statistics include a wealth of information about the severity of accidents and parties involved.<br /><br />"+
-        "Via the map, you may visualize traffic accident data based on your own desired choice of variables.<br /><br />"+
+    lang_welcome_innercontent:"<p>Traffic accident statistics include a wealth of information about traffic accidents leading to personal injury and parties involved.<br /><br />"+
+        "Via the map, you can visualise traffic accident data based on your desired choice of variables.<br /><br />"+
         "The service allows you to create routings between locations and calculate traffic accident occurrences along the routes.</p>",
     lang_continue: "Continue",    
     index_header: "Traffic accidents map",
@@ -35,17 +35,17 @@
     nonSelectedTextNotSelected:"Not selected",
     lang_stability_1:"Fatal accident",
     lang_stability_2:"Accident leading to injury",
-    lang_type_0:"Same driving directions (straight)",
-    lang_type_1:"Same driving directions (turning)",
-    lang_type_2:"Opposite driving directions (straight)",
-    lang_type_3:"Opposite driving directions (turning)",
-    lang_type_4:"Crossing driving directions (straight)",
-    lang_type_5:"Crossing driving directions (turning)",
-    lang_type_6:"Pedestrian accident (on crossing)",
+    lang_type_0:"Same directions (no turning)",
+    lang_type_1:"Same directions (turning)",
+    lang_type_2:"Opposite directions (no turning)",
+    lang_type_3:"Opposite directions (turning)",
+    lang_type_4:"Intersecting directions (no turning)",
+    lang_type_5:"Intersecting directions (turning)",
+    lang_type_6:"Pedestrian accident (on pedestrian crossing)",
     lang_type_7:"Pedestrian accident (elsewhere)",
-    lang_type_8:"Off the road",
+    lang_type_8:"Running off the road",
     lang_type_9:"Other accident",
-    lang_partakers_0:"Sedan or van",
+    lang_partakers_0:"Car or van",
     lang_partakers_1:"Bus or truck",
     lang_partakers_2:"Pedestrian",
     lang_partakers_3:"Bicycle",
@@ -61,7 +61,7 @@
     lang_search_route2:"Choose destination",
     lang_hamburger_header1:"Map layers",
     lang_hamburger_header2:"Help",
-    lang_layers_header:"Visualization styles  <b class='caret'></b>",
+    lang_layers_header:"Visualisation styles  <b class='caret'></b>",
     lang_basemaps_header:"Basemaps  <b class='caret'></b>",
     lang_toggle_on:"On",
     lang_toggle_off:"Off",
@@ -74,10 +74,10 @@
     lang_navi_2:"Results",
     lang_navi_3:"Map layers, instructions and information about the service",
     lang_menu_header_1:"Search for traffic accidents <b class='caret'></b>",
-    lang_menu_header_2:"Visualization styles and map features <b class='caret'></b>",
+    lang_menu_header_2:"Visualisation styles and map features <b class='caret'></b>",
     lang_menu_header_3:"Address, place and route search <b class='caret'></b>",
     lang_menu_header_4:"Information about the service <b class='caret'></b>",
-    lang_menu_content_1:"<p>You can search traffic accident statistics by year of event or filter data by a combination of criteria. Criteria include: accident year, month, time of day, severity, type of accident and parties involved. The search results are presented both as bar charts and a dynamic map view.<br />"+
+    lang_menu_content_1:"<p>You can search traffic accident statistics by year of event or filter data by a combination of criteria. The criteria include: year of accident, month, time of day, severity, type of accident and parties involved. The search results are presented both as bar charts and a dynamic map view.<br />"+
             "<ul><li>Open <i class='material-icons'>settings</i> menu (opens by default).</li>"+
             "<li>Start by selecting the years. After that you can choose other filters.</li>"+
             "<li>The search rule is created by selecting a set of criteria from the drop-down menus.</li>"+
@@ -85,19 +85,19 @@
             "<li>The Submit button will begin the search.</li>"+
             "</ul>"+
             "</p>",
-    lang_menu_content_2:"<p>You may change the map presentation style from the Visualization styles menu above."+
-            " On the map it is possible to visualize the search results in two ways:"+
-            "<ul><li>A heatmap presentation that describes a spatial density of accident occurrences. In this case, locations more prone to having accidents are visually better distinguishable. The heatmap does not appear in higher zooms - a button will appear in the upper right corner of the window, clicking it will take you to the right zoom level.</li>"+
-            "<li>Point symbol -visualization style, which presents accidents as cluster points in zoom-outs, while at detailed zoom-ins actual accident location points are shown. The user can get more detailed information about the individual accidents by clicking them on the map."+
+    lang_menu_content_2:"<p>You can change the map presentation style from the Visualisation styles menu above."+
+            " On the map it is possible to visualise the search results in two ways:"+
+            "<ul><li>A heatmap presentation that describes the spatial density of accident occurrences. In this case, locations more prone to having accidents are visually better distinguishable. The heatmap does not appear in higher zooms - a button will appear in the upper right corner of the window, and clicking it will take you to the right zoom level.</li>"+
+            "<li>The point symbol visualisation style, which presents accidents as cluster points in zoom-outs, while at detailed zoom-ins actual accident location points are shown. The user can get more detailed information about the individual accidents by clicking them on the map."+
             "</li></ul></p>",
-    lang_menu_content_3:"<p>You can search for an address or a place name and create a routing, so that you can see the number of accidents along your chosen route. Routing works either by typing in the search field or by selecting a map:"+ 
+    lang_menu_content_3:"<p>You can search for an address or a place name and create a routing, so that you can see the number of accidents along your chosen route. Routing works in two ways:"+ 
             "<ul>"+
             "<li>Enter the start address or place name in the search box and select the correct location from the search results.</li>"+
             "<li>Enter the destination address or place name in the search box and select the correct location from the search results.</li>"+
             "OR"+
             "<li>Click on the start location on the map.</li>"+
             "<li>Click on the destination location on the map.</li></ul>"+
-            "The service calculates the fastest route and number of accidents along the route using a 50m buffer. The number of accidents is displayed in the left pane. You can continue your route by adding new destination points - any additional accidents will be added to the previous sum.<br /><br />Note that if you haven't configured and submitted any accident search, statistics along the route cannot be calculated."+
+            "The service calculates the fastest route and the number of accidents along the route using a 50 m buffer. The number of accidents is displayed in the left pane. You can continue your route by adding new destination points - any additional accidents will be added to the previous sum.<br /><br />Note that if you have not configured and submitted any accident search, statistics along the route cannot be calculated."+
             "</p>",
      lang_menu_content_4:" <h5>Data source</h5>"+
             "<p>The service uses the <a href='http://www.stat.fi/tup/rajapintapalvelut/tieliikenneonnettomuudet.html' target='_blank'>traffic accident interface</a> by Statistics Finland </p><br />"+
@@ -106,38 +106,38 @@
             "<h5>Implementation of the service</h5>"+
             "<p>This service has been developed by <a href='http://www.ubigu.fi/' target='_blank'>Ubigu Oy</a>.</p>",
      lang_route_ok:"Accidents along the route<br />in total ",
-     lang_route_kpl:" pcs.",
-     lang_route_nodata:"There were no accidents on the selected route. You may continue the route - any accidents will be added to the previous calculation.",
-     lang_route_nosearch:"First select the search criteria, so that accidents occurring on your route may be calculated!",
+     lang_route_kpl:" No.",
+     lang_route_nodata:"There were no accidents on the selected route. You can continue the route and any accidents will be added to the previous calculation.",
+     lang_route_nosearch:"First select the search criteria, so that accidents occurring on your route can be calculated!",
      lang_gfi_header:"Feature info",
      lang_gfi_year:"Year:",
      lang_gfi_month:"Month:",
      lang_gfi_td:"Time of day:",
      lang_gfi_stability:"Severity:",
      lang_gfi_toa:"Type of accident",
-     lang_gfi_party1:"Parties involved (sedan/van):",
+     lang_gfi_party1:"Parties involved (car/van):",
      lang_gfi_party2:"Parties involved (bus/truck):",
      lang_gfi_party3:"Parties involved (pedestrian):",
      lang_gfi_party4:"Parties involved (bicycle):",
      lang_gfi_party5:"Parties involved (moped):",
      lang_gfi_party6:"Parties involved (motorbike):",
-     lang_gfi_party7:"Parties involved (other):"         
+     lang_gfi_party7:"Parties involved (other):"        
    
   };
 
    var se = {
     lang_header_logo: "https://stat.webigu.fi/img/TK_SE_white_203.png",
-    lang_welcome_header:"Välkommen till<br />trafikolyckor på karta -webbtjänsten",
-    lang_welcome_innercontent:"<p>Statistikcentralens statistiker över trafikolyckor innerhåller månsidiga information om olyckor som ledde till personskador och om parter i olyckan.<br /><br />"+
-        "Visa olyckor i förhållande till olika kriterier. Kartan reagerar på dina inställningar.<br /><br />"+
-        "Du kan också skapa dirigeringar, varvid olycksstatistiker kommer att visas för din rutt.</p>",
-    lang_continue: "Fortsätta till tjänsten",
+    lang_welcome_header:"Välkommen till<br />webbtjänsten trafikolyckor på karta",
+    lang_welcome_innercontent:"<p>Statistiken över trafikolyckor innehåller mångsidig information om trafikolyckor som ledde till personskador och om parterna i olyckorna.<br /><br />"+
+        "Granska olyckor i förhållande till olika kriterier. Kartan reagerar på dina inställningar.<br /><br />"+
+        "Du kan också skapa dirigeringar, varvid antalet trafikolyckor kommer att visas för din rutt enligt dina val.</p>",
+    lang_continue: "Fortsätt till tjänsten",
     index_header: "Trafikolyckor på karta",
-    index_info_header: "<p>Börja med att välja sökkriterier från rullgardinsmenyerna nedan. Tryck sedan på 'Sök'-knappen.</p>", 
+    index_info_header: "<p>Börja med att välja sökkriterier från rullgardinsmenyerna nedan. Tryck sedan på knappen 'Sök'.</p>", 
     route_startpoint:"<span style='top: 10px; font-size:2em;' class='glyphicon glyphicon-info-sign' aria-hidden='true'></span>&nbsp;&nbsp;&nbsp;Sök efter adress, platsnamn eller välj en startpunkt på kartan.",
     route_endpoint:"<span style='top: 10px; font-size:2em;' class='glyphicon glyphicon-info-sign' aria-hidden='true'></span>&nbsp;&nbsp;&nbsp;Om du vill dirigera, lägg till en destination.", 
     route_added: "<span style='top: 10px; font-size:2em;' class='glyphicon glyphicon-info-sign' aria-hidden='true'></span>&nbsp;&nbsp;&nbsp;Rutt tillsatt",
-    route_count: "<span style='top: 10px; font-size:2em;' class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;&nbsp;&nbsp;Beräknar antalet av olyckor på rutten",
+    route_count: "<span style='top: 10px; font-size:2em;' class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;&nbsp;&nbsp;Beräknar antalet olyckor på rutten",
     lang_resolution: "Gå till rätt skala",
     route_startbutton: "Dirigera",
     route_stopbutton:"Stoppa",
@@ -146,13 +146,13 @@
     lang_year: "År:",
     lang_month: "Månader:",
     lang_time_of_day: "Tidpunkt:",
-    lang_stability:"Allvar:",
+    lang_stability:"Allvarlighetsgrad:",
     lang_type:"Typ av olycka:",
     lang_partakers:"Parter i olyckan:",
-    lang_reset:"Nolla",
+    lang_reset:"Töm",
     lang_submit:"Sök",
     lang_select_years:"Välj år",
-    nSelectedText:"vald",
+    nSelectedText:"valda",
     selectAllText:"Välj alla",
     nonSelectedTextAll:"Alla",
     nonSelectedTextNotSelected:"Inga valda",
@@ -174,79 +174,79 @@
     lang_partakers_3:"Cykel",
     lang_partakers_4:"Moped",
     lang_partakers_5:"Motorcykel",
-    lang_partakers_6:"Annan trafikant",
+    lang_partakers_6:"Annat fordon",
     lang_partakers_no_selected:"Alla",
-    lang_graph_title:"Antal av olyckor / månad / år",
+    lang_graph_title:"Antal olyckor / månad / år",
     lang_selected_filter_title:"Valda sökkriterier",
     lang_sum_1:"Totalt: ",
     lang_sum_2:" olyckor<br />",
-    lang_search_route1:"Sök efter adress eller plats",
+    lang_search_route1:"Sök efter adresser eller platser",
     lang_search_route2:"Välj destination",
     lang_hamburger_header1:"Kartlager",
     lang_hamburger_header2:"Instruktioner",
-    lang_layers_header:"Presentationsstil  <b class='caret'></b>",
-    lang_basemaps_header:"Grundkarta  <b class='caret'></b>",
+    lang_layers_header:"Presentationsstilar  <b class='caret'></b>",
+    lang_basemaps_header:"Bakgrundskarta  <b class='caret'></b>",
     //lang_toggle_on:"Aktiverad",
     //lang_toggle_off:"Inaktiverad",
     lang_toggle_on:"On",
     lang_toggle_off:"Off",
     lang_cluster:" Punktkarta",
     lang_heatmap:" Värmekarta",
-    lang_light_bgmap: " Ljus grundkarta",
-    lang_dark_bgmap: " Mörk grundkarta",
+    lang_light_bgmap: " Ljus bakgrundskarta",
+    lang_dark_bgmap: " Mörk bakgrundskarta",
     lang_transparency: "Genomskinlighet",
-    lang_navi_1:"Söka efter olyckor",
+    lang_navi_1:"Sök efter olyckor",
     lang_navi_2:"Resultat",
     lang_navi_3:"Kartlager, bruksanvisning och information om tjänsten",
     lang_menu_header_1:"Sök efter data om trafikolyckor<b class='caret'></b>",
-    lang_menu_header_2:"Presentationsstilar och egenskaper av kartan <b class='caret'></b>",
-    lang_menu_header_3:"Adress-, plats- och ruttsök <b class='caret'></b>",
+    lang_menu_header_2:"Presentationsstilar och kartans egenskaper <b class='caret'></b>",
+    lang_menu_header_3:"Adress-, plats- och ruttsökning <b class='caret'></b>",
     lang_menu_header_4:"Information om tjänsten <b class='caret'></b>",
-    lang_menu_content_1:"<p>Man kan söka efter trafikolycksstatistiker efter år och begränsa resultaten baserat på en kombination av variabler. Sökkriterierna inkluderar år, månad, tidpunkt, allvar, typ av olycka och parter. Resultaten visas som en dynamisk karta och ett stapeldiagram, som visar information om olyckor per år och månad. <br />"+
+    lang_menu_content_1:"<p>Man kan söka efter statistik över trafikolyckor efter år eller begränsa resultaten baserat på en kombination av variabler. Sökkriterierna inkluderar år, månad, tidpunkt, allvarlighetsgrad, typ av olycka och parter. Resultaten visas som ett stapeldiagram, som visar information om olyckor per år och månad, samt som en dynamisk karta. <br />"+
             "<ul><li>Öppna <i class='material-icons'>settings</i> menyn (öppnas som standard).</li>"+
             "<li>Börja först med att välja år. Därefter kan du välja andra sökkriterier.</li>"+
             "<li>En kombination av sökkriterier kan skapas från variablerna i rullgardinsmenyerna.</li>"+
-            "<li>Man väljer parterna, som var inblandade i olyckan.</li>"+
-            "<li>Sökningen startas med 'Sök'-knappen.</li>"+
+            "<li>Välj de parter, som var inblandade i olyckan.</li>"+
+            "<li>Sökningen startas med knappen 'Sök'.</li>"+
             "</ul>"+
             "</p>",
-    lang_menu_content_2:"<p>Du kan ändra hur sökresultaten visas från Presentationsstilar-menyn."+
-            "Man kan visualisera resultaten på kartan på två sätt:"+
-            "<ul><li>En värmekarta, som visar tydligt de platser där olyckor tenderar att hända oftare. Värmekartan kan inte visas när den zoomas ut för mycket. En knapp visas i övre högra hörnet - om du klickar på det, flyttas kartan till rätta nivået.</li>"+
-            "<li>En punktkarta, som visar olyckorna som punktkluster. Om du zoomar in, individuella olyckor ska visas som poäng. Användaren kan då få ytterligare information om olyckan om man klickar på punkten"+
+    lang_menu_content_2:"<p>Du kan ändra hur sökresultaten visas från menyn Presentationsstilar."+
+            "Det går att visualisera resultaten på kartan på två sätt:"+
+            "<ul><li>En värmekarta, som bättre beskriver olyckor som skett nära varandra. Den visar tydligt de platser där olyckor har hänt oftare. Värmekartan kan inte visas när den zoomas ut för mycket. Ett fönster visas i övre högra hörnet - om du klickar på det, flyttas kartan automatiskt till rätt nivå.</li>"+
+            "<li>En punktkarta, som visar olyckorna som punktkluster. Om du zoomar in, visas enskilda olyckor enligt rätt position. Mera information om enskilda olyckor visas då man klickar på objektet."+
             "</li></ul></p>",
-    lang_menu_content_3:"<p>Du kan söka platser efter adress, platsnamn eller skapa dirigeringar, varvid olycksstatistiker kommer att visas för din rutt. Dirigeringen fungerar antingen genom att skriva in sökfältet eller genom att välja på karta:"+ 
+    lang_menu_content_3:"<p>Du kan söka platser efter adress, platsnamn eller skapa dirigeringar, varvid antalet olyckor kommer att visas för din rutt enligt dina val. Dirigeringen fungerar på två olika sätt. Skriv in startpunktens adress eller namnet på platsen i sökfältet och välj rätt position utifrån sökresultaten."+ 
             "<ul>"+
-            "<li>Skriv ner startadressen eller ett ställenamn i sökformuläret och välj rätta platsen från resultaten.</li>"+
-            "<li>Skriv ner destinationsadressen eller ett ställenamn i sökformuläret och välj rätta platsen från resultaten</li>"+
+            "<li>Skriv startadressen eller platsens namn i sökfältet och välj rätt position utifrån resultaten.</li>"+
+            "<li>Skriv destinationsadressen eller platsens namn i sökfältet och välj rätt position utifrån resultaten</li>"+
             "ELLER"+
             "<li>Klicka på en startpunkt på kartan.</li>"+
             "<li>Klicka på en destinationspunkt på kartan.</li></ul>"+
-            "Tjänsten beräknar den snabbaste vägen och antalet av olyckor längs rutten med en 50 meter sökradie. Summan kommer att visas i det vänstra fönstret. Man kan också fortsätta routningen - om det finns några nya olyckor, de kommer att läggas till summan.<br /><br />Obs! Om du inte har sökt efter olycksdata, kan man inte beräknas olyckor för din rutt."+
+            "Tjänsten beräknar den snabbaste rutten och antalet olyckor längs rutten med en 50 meters sökradie. Summan visas i det vänstra fönstret. Du kan fortsätta routningen genom att mata in nya destinationer, varvid antalet olyckor adderas till summan som redan beräknats.<br /><br />Obs! Om du inte har sökt efter olycksdata, kan man inte beräkna olyckor för din rutt."+
             "</p>",
      lang_menu_content_4:" <h5>Datakälla</h5>"+
-            "<p>Webbtjänsten använder Statistikcentralens <a href='http://www.stat.fi/tup/rajapintapalvelut/tieliikenneonnettomuudet.html' target='_blank'>trafikolyckansgränssnitt.</a></p><br />"+
+            "<p>Webbtjänsten använder Statistikcentralens <a href='http://www.stat.fi/tup/rajapintapalvelut/tieliikenneonnettomuudet.html' target='_blank'>gränssnitt över trafikolyckor.</a></p><br />"+
             "<h5>Beskrivning av data</h5>"+
-            "<p>Man kan hitta en mer detaljerad beskrivning av data på<a href='http://www.paikkatietohakemisto.fi/catalogue/ui/metadata.html?lang=fi&metadataresourceuuid=de71e0a1-4516-4d50-bd54-e384e5174546' target='_blank'> Paikkatietohakemisto.</a></p> <br />"+
+            "<p>En mer detaljerad beskrivning av data finns på<a href='http://www.paikkatietohakemisto.fi/catalogue/ui/metadata.html?lang=fi&metadataresourceuuid=de71e0a1-4516-4d50-bd54-e384e5174546' target='_blank'> Paikkatietohakemisto.</a></p> <br />"+
             "<h5>Om webbjänsten</h5>"+
             "<p>Webbtjänsten skapades av <a href='http://www.ubigu.fi/' target='_blank'>Ubigu Oy</a>.</p>",         
-     lang_route_ok:"På din rutt det fanns totalt:<br /> ",
+     lang_route_ok:"På din rutt fanns det enligt sökkriterierna totalt:<br /> ",
      lang_route_kpl:" olyckor.",
-     lang_route_nodata:"Inga olyckor kan hittas för din rutt. Du kan fortsätta routningen - om det finns några nya olyckor, de kommer att läggas till summan.",
-     lang_route_nosearch:"Välj sökkriterier, så att olyckor kan beräknas för din rutt!",
-     lang_gfi_header:"Information",
+     lang_route_nodata:"Inga olyckor kan hittas på din rutt. Du kan fortsätta routningen, varvid nya olyckor kommer att läggas till summan.",
+     lang_route_nosearch:"Välj sökkriterier, så att olyckor kan beräknas på din rutt!",
+     lang_gfi_header:"Information om objektet ",
      lang_gfi_year:"År:",
      lang_gfi_month:"Månad:",
      lang_gfi_td:"Tidpunkt:",
-     lang_gfi_stability:"Allvar:",
+     lang_gfi_stability:"Allvarlighetsgrad:",
      lang_gfi_toa:"Typ av olycka:",
-     lang_gfi_party1:"Antal (personbil/paketbil):",
-     lang_gfi_party2:"Antal (buss/lastbil):",
-     lang_gfi_party3:"Antal (fotgängare):",
-     lang_gfi_party4:"Antal (cykel):",
-     lang_gfi_party5:"Antal (moped):",
-     lang_gfi_party6:"Antal (motorcykel):",
-     lang_gfi_party7:"Antal (annan):"
+     lang_gfi_party1:"Antal inblandade (personbil/paketbil):",
+     lang_gfi_party2:"Antal inblandade (buss/lastbil):",
+     lang_gfi_party3:"Antal inblandade (fotgängare):",
+     lang_gfi_party4:"Antal inblandade (cykel):",
+     lang_gfi_party5:"Antal inblandade (moped):",
+     lang_gfi_party6:"Antal inblandade (motorcykel):",
+     lang_gfi_party7:"Antal inblandade (annan):"
   };
 
   var fi = {
@@ -320,7 +320,7 @@
     lang_navi_1:"Onnettomuushaku",
     lang_navi_2:"Tulokset",
     lang_navi_3:"Karttatasot, käyttöohjeet ja tietoja palvelusta",
-    lang_menu_header_1:"Liikenneonnettomuus aineiston hakeminen <b class='caret'></b>",
+    lang_menu_header_1:"Liikenneonnettomuusaineiston hakeminen <b class='caret'></b>",
     lang_menu_header_2:"Esitystyylit ja kartan ominaisuudet <b class='caret'></b>",
     lang_menu_header_3:"Osoite-, paikka- ja reittihaku <b class='caret'></b>",
     lang_menu_header_4:"Tietoja palvelusta <b class='caret'></b>",
