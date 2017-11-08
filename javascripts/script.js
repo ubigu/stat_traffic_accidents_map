@@ -529,7 +529,7 @@
       });
     }
     var monthTableFI = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"];
-    var monthTableEN = ["January", "Fabruary", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var monthTableEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var monthTableSE = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
     $("#slider3").change(function () {
       var obj = $("#slider3").data("roundSlider");
@@ -917,6 +917,7 @@
       var color_ramp = get_colors();
       var color = '';
       var vvonnDump = $('#year').val();
+      //console.log(vvonnDump +" "+feature.get('vvonn'));
       var i;
       for (i = 0; i < vvonnDump.length; i++) {
         if (feature.get('vvonn') == vvonnDump[i]) {
@@ -1480,11 +1481,22 @@
     var resultsSum = [];
     //console.log(allMonthsArray);
     //console.log(monthArray2);
-    //console.log(Object.values(yearArray).length);       
+    //console.log(Object.values(yearArray).length);     
+    var vvonnDump = $('#year').val();
+    var color_ramp = get_colors();
+    var color = '';    
+     
     for (var i = 0; i < Object.keys(yearArray).length; i++) {
+      //color loop for diagram
+      for (var ii = 0; ii < vvonnDump.length; ii++) {
+        if (Object.keys(yearArray)[i] == vvonnDump[ii]) {
+          color = color_ramp[ii];
+        }
+      }
       monthArray2.push({
         label: Object.keys(yearArray)[i],
-        backgroundColor: colors_for_diagram[i],
+        /*backgroundColor: colors_for_diagram[i],*/
+        backgroundColor: color,
         data: yearArray[Object.keys(yearArray)[i]]
       });
     }
@@ -1621,7 +1633,7 @@
     if (selectedLang == 'fi') {
       var monthTableShort = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"];
     } else if (selectedLang == 'en') {
-      var monthTableShort = ["January", "Fabruary", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var monthTableShort = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     } else if (selectedLang == 'se') {
       var monthTableShort = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
     }
